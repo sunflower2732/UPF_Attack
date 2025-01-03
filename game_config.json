@@ -1,0 +1,389 @@
+{
+  "scenarios": [
+      {
+          "name": "Library",
+          "description": "You are peacefully checking your studying at the library's third floor until a sudden noise disturbs you. The student in front of you is staring at you and growling...and other students seem to be in a similar state. It seems that two PHD students at 'Campus Mar' have accidentally developed a virus that turns people aggressive, and improves their physicality! One of those students has arrived at 'Campus Poblenou' and the sickness is spreading. Leave the campus ASAP. \n",
+          "decision_options": [
+              {
+                  "response": "Take the stairs to the hall",
+                  "narrative_before": "Wow! That was a long way down! It's so silent, I wonder if... Oh, no! Some enemies are approaching you!",
+                  "enemy": [
+                      {
+                          "name": "Receptionist",
+                          "description": "She looks kind and it seem she wants to help you, but she has a threating stapler in her hand, and she wont doubt on using it.",
+                          "hp": 27,
+                          "atp": 17,
+                          "def": 0,
+                          "skills": [
+                              {"name": "Punch", "description": "You can hit a player in the face with your fist", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Kick", "description": "You can hit a player in the face with your leg", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 15, "def": 0}, "active": false},
+                              {"name": "Blinding light", "description": "You can blind the player with a lantern until the battery is over", "type": false, "duration": 3, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Shield", "description": "You can protect yourself against the player's attack", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 0, "def": 10}, "active": false}
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "response": "Take the stairs to the first floor",
+                  "narrative_before": "Catch your breath! You've made it to the first floor and it looks like someone is here... Watch out! An enemy is ready to fight.",
+                  "enemy": [
+                      {
+                          "name": "Exhausted Bookworm",
+                          "description": "This infected is not too dangerous because the student, before the sickness, was physically weak due to countless hours spent at the library and sleep deprivation",
+                          "hp": 22,
+                          "atp": 3,
+                          "def": 0,
+                          "skills": [
+                              {"name": "Punch", "description": "You can hit a player in the face with your fist", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Kick", "description": "You can hit a player in the face with your leg", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 15, "def": 0}, "active": false},
+                              {"name": "Blinding light", "description": "You can blind the player with a lantern until the battery is over", "type": false, "duration": 3, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Shield", "description": "You can protect yourself against the player's attack", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 0, "def": 10}, "active": false}
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "response": "Take the stairs to the second floor",
+                  "narrative_before": "That was not a long stair! Look, there seems to be some enemies here ready to fight... and there are three of them!",
+                  "enemy": [
+                      {
+                          "name": "Deadly Lovebirds",
+                          "description": "A famous couple in campus that is now infected and has united forces to attack together and eat their victims",
+                          "hp": 25,
+                          "atp": 15,
+                          "def": 0,
+                          "skills": [
+                              {"name": "Punch", "description": "You can hit a player in the face with your fist", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Kick", "description": "You can hit a player in the face with your leg", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 15, "def": 0}, "active": false},
+                              {"name": "Blinding light", "description": "You can blind the player with a lantern until the battery is over", "type": false, "duration": 3, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Shield", "description": "You can protect yourself against the player's attack", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 0, "def": 10}, "active": false}
+                          ]
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "name": "Gutenberg Square",
+          "description": "Nice! You've made it to the Gutenberg Square. You can choose your path.",
+          "decision_options": [
+              {
+                  "response": "Enter Tallers",
+                  "narrative_before": "Good decision! You will be able to gain strength and fight against possible new enemies."
+              },
+              {
+                  "response": "Go to the Cafeteria",
+                  "narrative_before": "Great! It is time to recover."
+              }
+          ]
+      },
+      {
+          "name": "Tallers",
+          "description": "Be ready to relax, gain some health, and in all likelihood, encounter some not so relaxing instances...",
+          "decision_options": [
+              {
+                  "response": "Enter the Robotics Lab",
+                  "narrative_before": "You cautiously enter the robotics lab, filled with the hum of machinery.",
+                  "enemy": [
+                      {
+                          "name": "PhD Student",
+                          "description": "You entered the Lab so fast you did not see there was a PhD Student eating a professor alive. Fast, do something or you'll be next!",
+                          "hp": 30,
+                          "atp": 30,
+                          "def": 10,
+                          "skills": [
+                              {"name": "Punch", "description": "You can hit a player in the face with your fist", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Kick", "description": "You can hit a player in the face with your leg", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 15, "def": 0}, "active": false},
+                              {"name": "Blinding light", "description": "You can blind the player with a lantern until the battery is over", "type": false, "duration": 3, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Shield", "description": "You can protect yourself against the player's attack", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 0, "def": 10}, "active": false}
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "response": "Rest at the sofa",
+                  "narrative_before": "Seems so cozy in here! Maybe you wanna take a nap...",
+                  "enemy": [
+                      {
+                          "name": "Dancers",
+                          "description": "The dancers behind the wall saw you and want to eat you alive. They start breaking the glass to kill you. Watch out!",
+                          "hp": 25,
+                          "atp": 45,
+                          "def": 5,
+                          "skills": [
+                              {"name": "Punch", "description": "You can hit a player in the face with your fist", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Kick", "description": "You can hit a player in the face with your leg", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 15, "def": 0}, "active": false},
+                              {"name": "Blinding light", "description": "You can blind the player with a lantern until the battery is over", "type": false, "duration": 3, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Shield", "description": "You can protect yourself against the player's attack", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 0, "def": 10}, "active": false}
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "response": "Explore the Communications Studio",
+                  "narrative_before": "Ah! The pleasure of learning! Though perhaps, the stress is the biggest enemy here...",
+                  "enemy": [
+                      {
+                          "name": "Janitor",
+                          "description": "The janitor followed your smell to the Communications Studio and saw you. Fast! Defend yourself or he might kill you with his broom.",
+                          "hp": 40,
+                          "atp": 20,
+                          "def": 10,
+                          "skills": [
+                              {"name": "Punch", "description": "You can hit a player in the face with your fist", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Kick", "description": "You can hit a player in the face with your leg", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 15, "def": 0}, "active": false},
+                              {"name": "Blinding light", "description": "You can blind the player with a lantern until the battery is over", "type": false, "duration": 3, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Shield", "description": "You can protect yourself against the player's attack", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 0, "def": 10}, "active": false}
+                          ]
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "name": "Café",
+          "description": "You may take some coffee, some food, enjoy other students, but at this point, you know none of that will be realxing, will it?",
+          "decision_options": [
+              {
+                  "response": "Approach the kitchen.",
+                  "narrative_before": "You have arrived at the kitchen! Be careful, remember that these chefs want to cook you alive... one is about to attack you!",
+                  "enemy": [
+                      {
+                          "name": "Cooks",
+                          "description": "You enter the kitchen, searching for food to fuel your body, after the last figths you are exhausted. You see two cooks, also fetching for nutrients. Fast, do something or you'll be next!",
+                          "hp": 40,
+                          "atp": 20,
+                          "def": 30,
+                          "skills": [
+                              {"name": "Punch", "description": "You can hit a player in the face with your fist", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Kick", "description": "You can hit a player in the face with your leg", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 15, "def": 0}, "active": false},
+                              {"name": "Blinding light", "description": "You can blind the player with a lantern until the battery is over", "type": false, "duration": 3, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Shield", "description": "You can protect yourself against the player's attack", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 0, "def": 10}, "active": false}
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "response": "Approach the bar area.",
+                  "narrative_before": "You have arrived at the bar area! Be careful, it looks like the barista is about to attack you!",
+                  "enemy": [
+                      {
+                          "name": "Barista",
+                          "description": "The barista appears, trying to get themselves some good caffeine. You followed that smell, also trying to keep yourself awake and alive after so many fights. Fast! Defend yourself or he might kill you instead.",
+                          "hp": 50,
+                          "atp": 15,
+                          "def": 25,
+                          "skills": [
+                              {"name": "Punch", "description": "You can hit a player in the face with your fist", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Kick", "description": "You can hit a player in the face with your leg", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 15, "def": 0}, "active": false},
+                              {"name": "Blinding light", "description": "You can blind the player with a lantern until the battery is over", "type": false, "duration": 3, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Shield", "description": "You can protect yourself against the player's attack", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 0, "def": 10}, "active": false}
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "response": "Approach the bathroom.",
+                  "narrative_before": "You have arrived at the bathroom! You run some water, facing the mirror, trying to relax and, suddenly, you see someone else's reflection.",
+                  "enemy": [
+                      {
+                          "name": "Student",
+                          "description": "You're exhausted, still trying to catch a breath but a student gone mad! Watch out!",
+                          "hp": 35,
+                          "atp": 45,
+                          "def": 10,
+                          "skills": [
+                              {"name": "Punch", "description": "You can hit a player in the face with your fist", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Kick", "description": "You can hit a player in the face with your leg", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 15, "def": 0}, "active": false},
+                              {"name": "Blinding light", "description": "You can blind the player with a lantern until the battery is over", "type": false, "duration": 3, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Shield", "description": "You can protect yourself against the player's attack", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 0, "def": 10}, "active": false}
+                          ]
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "name": "Classroom",
+          "description": "You have reached the final place at the campus! Be careful, you know this is not going to be easy. But hopes up! You are just a few steps away from escaping... make sure you don't lose!",
+          "decision_options": [
+              {
+                  "response": "Make your way to class 52.S27 for EDA 2 Lab",
+                  "narrative_before": "It's a bit chilly in here... Oh no! It looks like the coordinator is here... she's looking for you!",
+                  "enemy": [
+                      {
+                          "name": "EDA II Professor",
+                          "description": "The EDA II's professor has gone mad. He is screaming 'struct' continuoulsy and throwing keyboards to the students.",
+                          "hp": 40,
+                          "atp": 50,
+                          "def": 30,
+                          "skills": [
+                              {"name": "Punch", "description": "You can hit a player in the face with your fist", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Kick", "description": "You can hit a player in the face with your leg", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 15, "def": 0}, "active": false},
+                              {"name": "Blinding light", "description": "You can blind the player with a lantern until the battery is over", "type": false, "duration": 3, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Shield", "description": "You can protect yourself against the player's attack", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 0, "def": 10}, "active": false}
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "response": "Make your way to class 52.019 for Cinema History",
+                  "narrative_before": "You can feel the stress floating in this classroom... Oh! It's your professor...he doesn't look too happy.",
+                  "enemy": [
+                      {
+                          "name": "Cinema History TA",
+                          "description": "She looks furious and looks terrifyingly threatening with that camera.",
+                          "hp": 50,
+                          "atp": 30,
+                          "def": 40,
+                          "skills": [
+                              {"name": "Punch", "description": "You can hit a player in the face with your fist", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Kick", "description": "You can hit a player in the face with your leg", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 15, "def": 0}, "active": false},
+                              {"name": "Blinding light", "description": "You can blind the player with a lantern until the battery is over", "type": false, "duration": 3, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Shield", "description": "You can protect yourself against the player's attack", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 0, "def": 10}, "active": false}
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "response": "Make your way to class 52.221 for Physiology Seminar",
+                  "narrative_before": "You made it! But ah... the two teaching assistants look like they are fuming...",
+                  "enemy": [
+                      {
+                          "name": "Physiology Professor",
+                          "description": "You are studying the skin, and suddently, lumps start appearing in your professor's body, just like a textbook disease. Oh no! he is a zombie now!",
+                          "hp": 65,
+                          "atp": 30,
+                          "def": 25,
+                          "skills": [
+                              {"name": "Punch", "description": "You can hit a player in the face with your fist", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Kick", "description": "You can hit a player in the face with your leg", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 15, "def": 0}, "active": false},
+                              {"name": "Blinding light", "description": "You can blind the player with a lantern until the battery is over", "type": false, "duration": 3, "modifier": {"hp": 0, "atp": 10, "def": 0}, "active": false},
+                              {"name": "Shield", "description": "You can protect yourself against the player's attack", "type": true, "duration": -1, "modifier": {"hp": 0, "atp": 0, "def": 10}, "active": false}
+                          ]
+                      }
+                  ]
+              }
+          ]
+      }
+  ],
+  "player_skills": [
+    {
+        "name": "Super Strength",
+        "description": "After drinking steroids drug at the chemnsitry lab you gain extra-strength",
+        "type": true,
+        "duration": 3,
+        "modifier": 
+            {
+                "hp": 0, 
+                "atp": 20, 
+                "def": 0
+            },
+        "active": false
+    },
+    {
+        "name": "Super Speed",
+        "description": "After a cup of coffee you regain energy and become fast. Dodge your enemies more easily",
+        "type": true,
+        "duration": 3,
+        "modifier":
+            {
+                "hp": 0, 
+                "atp": 0, 
+                "def": 10
+            },
+        "active": false 
+    },
+    {
+        "name": "Soldering Iron",
+        "description": "You can inflict extreme damage on your opponents until the battery is dead",
+        "type": true,
+        "duration": 6,
+        "modifier":
+            {
+                "hp": 0, 
+                "atp": 30, 
+                "def": 0
+            },
+        "active": false
+    },
+    {
+        "name": "Bomb",
+        "description": "You can throw it against an enemy. You will defeat him!",
+        "type": true,
+        "duration": 1,
+        "modifier":
+            {
+                "hp": 0, 
+                "atp": 100, 
+                "def": 0
+            },
+        "active": false
+    },
+    {
+        "name": "Book",
+        "description": "Provides knowledge about how to defend against possible enemies' attacks.",
+        "type": false,
+        "duration": -1,
+        "modifier":
+            {
+                "hp": 0, 
+                "atp": 0, 
+                "def": 10
+            },
+        "active": false
+    },
+    {
+        "name": "Pliers",
+        "description": "Gives you the ability to break any chain and to open closed doors.",
+        "type": false,
+        "duration": -1,
+        "modifier":
+            {
+                "hp": 0, 
+                "atp": 0, 
+                "def": 15
+            },
+        "active": false
+    },
+    {
+        "name": "Battery",
+        "description": "You are able to electrocutate an opponent.",
+        "type": false,
+        "duration": -1,
+        "modifier":
+            {
+                "hp": 0, 
+                "atp": 10, 
+                "def": 0
+            },
+        "active": false
+    },
+    {
+        "name": "Ultrasound",
+        "description": "Emits a disturbing sound that will weaken your opponent.",
+        "type": false,
+        "duration": -1,
+        "modifier":
+            {
+                "hp": 0, 
+                "atp": 15, 
+                "def": 0
+            },
+        "active": false
+    },
+    {
+        "name": "Keyboard",
+        "description": "Used both as a shield or to hit your opponent!",
+        "type": false,
+        "duration": -1,
+        "modifier":
+            {
+                "hp": 0, 
+                "atp": 10, 
+                "def": 10
+            },
+        "active": false
+    }
+  ]
+}
